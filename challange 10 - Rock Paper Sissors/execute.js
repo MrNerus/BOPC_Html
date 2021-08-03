@@ -50,7 +50,7 @@ function AI(uin, cin) {
                 u_win++;
                 break;
             case "paper":
-                a.innerText = `Computer choosed ${cin} too! It's a draw`;
+                a.innerText = `Computer choosed ${cin}! You Loose.`;
                 c_win++;
                 break;
             default:
