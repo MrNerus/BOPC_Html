@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Sissors</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="../icons/RPS.svg" type="image/x-icon">
+    
+</head>
+<body>
+    <section class="container">
+        <select class="Drop_Menu" id="RPC" name="adress_type">
+            <option value="rock">Rock</option>
+            <option value="paper">Paper</option>
+            <option value="sissors">Sissors</option>
+        </select>
+        <input type="button" value="Punch" onclick="Play()" class="Button_Links">
+        <div class="Hidden2" id="Hidden_Message">
+            <p id="Message" class="Static_White">Message Here.</p>
+            <input type="button" value="×" onclick="Close_Message()" class="Button_Links">
+        </div>
+        <a href="../index.html" class="Button_Links Top-Left">Go Back</a>
+        <p id="Info" class="Bottom-Right">You 0/0 Bot</p>
+    </section>
+    
+</body>
+<script src="./execute.js"></script>
+</html>

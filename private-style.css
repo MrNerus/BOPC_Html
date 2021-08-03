@@ -55,9 +55,15 @@
     color: #0a0a0a;
     background-color: #f5f5f5;
 }
-
+.preview {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+}
 .icon{
-    width: 120px;
+    max-height: 150px;
+    max-width: 120px;
     margin: 15px;
 }
 
@@ -67,14 +73,5 @@
     transition: 0.3s ease-in-out;
     min-height: 30px;
     font-size:22px;
-    text-align: center;
-}
-
-.hidden{
-    height:0;
-    width: 100%;
-    color: #f5f5f5;
-    background-color: transparent;
-    transition: 0.3s ease-in-out;
     text-align: center;
 }
