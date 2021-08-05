@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <section class="container">
+        <div class="Top_Right" id="Help_Button">
+            <input type="button" value="?" class="Button_Links" onclick="Click_Info()">
+            <div  class="Static_White Hidden2" id="Help_Box">
+                <p class="Leave_A_Little_Space">Special thanks to <a href="https://github.com/15Dkatz/">15Dkatz</a> on  <a href="https://github.com/15Dkatz/official_joke_api">Github</a>.</p>
+            </div>
+        </div>
+        <a href="../index.html" class="Button_Links Top_Left">Go Back</a>
+        <p class="Mid_White_Text Setup" id="Setup">....</p>
+        <p class="Mid_White_Text Punchline" id="Punchline">...</p>
+        <div class="inline">
+            <input type="button" value="Show Punchline" class="Button_Links Little_Margin" onclick="Update_Punchine()">
+            <input type="button" value="Another One" class="Button_Links Little_Margin" onclick="Set_Joke()">
+            <div class="Buffer Little_Margin Hidden2" id="Buffer"></div>
+        </div>
+        
+    </section>
+</body>
+<!-- <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> -->
+<script src="./execute.js"></script>
+</html>

@@ -1,15 +1,23 @@
-[{
-    "folder": "challange 9 - random card generator",
-    "icon": "cards.svg",
-    "alt": "Random card gen icon",
-    "title": "Random Card Gen",
-    "challange": "9"
-},
-{
-    "folder": "challange 10 - Rock Paper Sissors",
-    "icon": "RPS.svg",
-    "alt": "Rock paper sissors icon",
-    "title": "Rock Paper Sissors",
-    "challange": "10"
-}
+[
+    {
+        "folder": "challange 1 - Joker",
+        "icon": "Joker.svg",
+        "alt": "Joker icon",
+        "title": "Joker",
+        "challange": "1"
+    },
+    {
+        "folder": "challange 9 - random card generator",
+        "icon": "cards.svg",
+        "alt": "Random card gen icon",
+        "title": "Random Card Gen",
+        "challange": "9"
+    },
+    {
+        "folder": "challange 10 - Rock Paper Sissors",
+        "icon": "RPS.svg",
+        "alt": "Rock paper sissors icon",
+        "title": "Rock Paper Sissors",
+        "challange": "10"
+    }
 ]
