@@ -73,13 +73,7 @@ function computerChoose(options) {
 }
 
 function Play() {
-    if (screen.width >= 450) {
-        document.getElementById("Hidden_Message").style.height = "54px";
-    }
-    else {
-        document.getElementById("Hidden_Message").style.height = "78px";
-    }
-    
+    Unhide_Hidden2("Response", "#Response_Container");
     User_Input = document.getElementById("RPC").value;
     Computer_Choosed = computerChoose(choice);
     AI(User_Input, Computer_Choosed);
@@ -87,5 +81,12 @@ function Play() {
 }
 
 function Close_Message() {
-    document.getElementById("Hidden_Message").style.height = "0px";
+    document.getElementById("Response").style.height = "0px";
+}
+
+function Unhide_Hidden2(Id, RefrenceId) {
+    a = document.querySelector(RefrenceId).clientHeight + "px";
+    console.log(a);
+    document.getElementById(Id).style.height = a;
+
 }

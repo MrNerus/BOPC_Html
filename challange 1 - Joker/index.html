@@ -10,20 +10,30 @@
     
 </head>
 <body>
-    <section class="container">
-        <div class="Top_Right" id="Help_Button">
-            <input type="button" value="?" class="Button_Links" onclick="Click_Info()">
-            <div  class="Static_White Hidden2" id="Help_Box">
-                <p class="Leave_A_Little_Space">Special thanks to <a href="https://github.com/15Dkatz/">15Dkatz</a> on  <a href="https://github.com/15Dkatz/official_joke_api">Github</a>.</p>
+    <section class="Container Center_on_Flex">
+
+        <input type="button" value="?" class="Top_Right Button_Links Space Center_on_Flex" onclick="Click_Info()">
+        <div class="Top_Right Hidden2 Half_Width_R Center_on_Flex" id="Help_Box" style="top:64px;">
+            <div id="Help_Container">
+                <p class="Static_White Space">Joke API from <a href="https://github.com/15Dkatz/">15Dkatz</a> on  <a href="https://github.com/15Dkatz/official_joke_api">Github</a>.</p>
             </div>
         </div>
-        <a href="../index.html" class="Button_Links Top_Left">Go Back</a>
+
+        
+        <a href="../index.html" class="Top_Left">
+            <input type="button" value="Go Back" class="Button_Links Space Center_on_Flex">
+        </a>
+
+
         <p class="Mid_White_Text Setup" id="Setup">....</p>
         <p class="Mid_White_Text Punchline" id="Punchline">...</p>
-        <div class="inline">
-            <input type="button" value="Show Punchline" class="Button_Links Little_Margin" onclick="Update_Punchine()">
-            <input type="button" value="Another One" class="Button_Links Little_Margin" onclick="Set_Joke()">
-            <div class="Buffer Little_Margin Hidden2" id="Buffer"></div>
+        <div class="Inline_R">
+            <input type="button" value="Show Punchline" class="Button_Links Space" onclick="Update_Punchine()">
+            <input type="button" value="Another One" class="Button_Links Space" onclick="Set_Joke()">
+            <div class="Hidden2 Space_Outside Center_on_Flex Buffer_Container" id="Buffer">
+                <div class="Buffer "></div>
+            </div>
+            
         </div>
         
     </section>

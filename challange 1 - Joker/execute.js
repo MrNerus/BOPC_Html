@@ -20,58 +20,13 @@ function Click_Info() {
 
 function Show_Info() {
     Help_Toggle = 1;
-    console.log(Help_Toggle);
-    document.getElementById("Help_Box").style.height = "35px";
+    Unhide_Hidden2("Help_Box", "#Help_Container");
 }
 
 function Hide_Info() {
     Help_Toggle = 0;
     document.getElementById("Help_Box").style.height = "0px";
 }
-
-
-// ====================
-
-// function Set_Joke(data) {
-
-//     console.log(data);
-//     captured = data;
-//     console.log(captured);
-
-//     Setup = captured["setup"];
-//     Punchline = captured["punchline"];
-//     console.log(Setup);
-//     console.log(Punchline);
-//     console.log("Exec fetching");
-//     return true;
-// }
-
-
-// function Another_One() {
-//     document.getElementById("Buffer").style.height = "30px";
-
-//     let Url = 'https://official-joke-api.appspot.com/random_joke';
-//     try {
-//         fetch(Url)
-//         .then(function(response) {
-//             return response.json();
-//         })
-//         .then(function(data) {
-//             Set_Joke(data);
-//         })
-//         .catch(function(err) {
-//             console.log('error: ' + err);
-//         });
-//         wait(4*1000);
-
-//     } catch (error) {
-//         console.log(`error: ${error}`);
-//     }
-//     console.log(Setup);
-//     console.log(Punchline);
-//     Update_Setup();
-//     document.getElementById("Buffer").style.height = "0px";
-// }
 
 function initialize() {
     document.getElementById("Buffer").style.height = "30px";
@@ -113,4 +68,11 @@ function Update_Setup() {
 }
 function Update_Punchine() {
     document.getElementById("Punchline").innerHTML = Punchline;
+}
+
+function Unhide_Hidden2(Id, RefrenceId) {
+    a = document.querySelector(RefrenceId).clientHeight + "px";
+    console.log(a);
+    document.getElementById(Id).style.height = a;
+
 }

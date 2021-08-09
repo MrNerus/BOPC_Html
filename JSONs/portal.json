@@ -19,5 +19,12 @@
         "alt": "Rock paper sissors icon",
         "title": "Rock Paper Sissors",
         "challange": "10"
+    },
+    {
+        "folder": "challange 14 - High Low",
+        "icon": "High Low.svg",
+        "alt": "High low icon",
+        "title": "High Low",
+        "challange": "14"
     }
 ]

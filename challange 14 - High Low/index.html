@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>High Low</title>
+</head>
+<body>
+    <section class="Container Center_on_Flex">
+
+
+        <a href="../index.html" class="Top_Left">
+            <input type="button" value="Go Back" class="Button_Links Space Center_on_Flex">
+        </a>
+
+
+        <input type="button" value="?" class="Top_Right Button_Links Space Center_on_Flex" onclick="Click_Info()">
+        <div class="Top_Right Hidden2 Half_Width_R Center_on_Flex" id="Help_Box" style="top:64px;">
+            <div id="Help_Container">
+                <p class="Static_White Space">Computer Chooses random number from 1-100.<br>
+                    You have to guess if the number computer choosed is higher or lower than the current one.<br>
+                    This apprently helps you to find your luck percentage which changes everytime.</p>
+            </div>
+        </div>
+
+
+        <div class="Inline">
+            <p class="Mid_White_Text ">Computer Guessed</p>
+            <p class="Static_White Space Center_on_Flex" id="Previous_Guess">..</p>
+        </div>
+
+
+        <div class="Inline Space">
+            <p class="Mid_White_Text">Low</p>
+            <div class=" Toggle_Mid Space_Outside" onclick="Toggle()">
+                <div class="Slider" id="Slider">
+                </div>
+            </div>
+            <p class="Mid_White_Text">High</p>
+        </div>
+
+
+        <input type="button" value="Punch" class="Button_Links Space" onclick="Play()">
+
+
+        <div class="Hidden2 Center_on_Flex" id="Response">
+            <div id="Response_Container" class="Inline">
+                <p id="Message" class="Static_White Space ">Message Here.</p>
+                <input type="button" value="×" onclick="Close_Message()" class="Button_Links Space ">
+            </div>
+        </div>
+        <div class="Bottom_Right">
+            <p id="Score_Board">You 0/0 Bot</p>
+            <p id="Luck_Board">Absolute 0 luck</p>
+        </div>
+        
+    </section>
+</body>
+<script src="./execute.js"></script>
+</html>

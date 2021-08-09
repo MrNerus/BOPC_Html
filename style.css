@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 * {
-    padding: 0;
-    margin: 0;
+    margin:0;
+    padding:0;
     font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
 }
 
 body{
@@ -11,16 +12,19 @@ body{
     background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
 
-.container{
+.Container{
     height:100vh;
     width: 100%;
-    display: flex;
     flex-direction: column;
+}
+
+.Inline {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
-
-.inline {
+.Inline_R {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -28,18 +32,14 @@ body{
 }
 .Button_Links {
     height:44px;
+    min-width: 44px;
     border-width: 2px;
     border-color: #f5f5f5;
     border-radius: 15px;
     border-style: solid;
     color: #f5f5f5;
     font-size: 24px;
-    padding: 0px 15px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
     background-color: transparent;
-    text-decoration: none;
     transition: ease-in-out 0.3s;
 }
 .Button_Links:hover {
@@ -47,7 +47,13 @@ body{
     color: #0a0a0a;
 }
 
-
+.Static_White {
+    position:relative;
+    color: #0a0a0a;
+    background-color: #f5f5f5;
+    font-size: 20px;
+    border-radius: 15px;
+}
 
 /* ---------------------------
   |      Define Positions     |
@@ -60,13 +66,11 @@ body{
 }
 .Top_Right{
     position: absolute;
-    height:auto;
-    Width: auto;
     top: 10px;
     right: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    /* height:1px;
+    width:1px;
+    overflow:visible; */
 }
 .Bottom_Right{
     position:absolute;
@@ -74,8 +78,6 @@ body{
     right: 10px;
     color: #f5f5f5;
     font-size: 24px;
-    margin: 5px;
-    padding: 10px 20px 10px 20px;
 }
 
 .hidden{
@@ -88,36 +90,101 @@ body{
     overflow:hidden;
 }
 .Hidden2{
-    height:0px;
+    height: 0px;
     transition: 0.3s ease-in-out;
     display: flex;
     flex-direction: row;
     overflow:hidden;
+    z-index: 1;
 }
-.Static_White {
-    color: #0a0a0a;
-    background-color: #f5f5f5;
-    font-size: 20px;
-    border-radius: 15px;
+
+.Center_on_Flex{
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 5px;
+    justify-content: center; 
 }
+
 
 
 /* --------------------------
   |       Tiny Details       |
   --------------------------- */
 
-.Leave_A_Little_Space {
-    padding: 5px 10px;
-}
-.Little_Margin {
-    margin: 5px;
-}
-
 .Mid_White_Text {
     font-size: 26px;
     color: #f5f5f5;
 }
+.Mid_Black_Text {
+    font-size: 26px;
+    color: #0a0a0a;
+}
+.Small_White_Text {
+    font-size: 20px;
+    color: #f5f5f5;
+}
+.Half_Width_R {
+    max-width: 50%;
+    width:auto;
+}
+
+.Space {
+    margin: 5px;
+    padding: 5px 10px;
+}
+.Space_Inside {
+    padding: 5px 10px;
+}
+.Space_Outside {
+    margin: 5px;
+}
+
+/* --------------------------
+  |        Building          |
+   -------------------------- */
+
+.Toggle_Mid {
+    position: relative;
+    height: 25px;
+    width: 50px;
+    border-width: 2px;
+    border-color: #f5f5f5;
+    border-radius: 15px;
+    border-style: solid; 
+    background-color: transparent;
+    transition: 0.3s ease;;
+}
+.Toggle_Mid:hover {
+    background-color: #f5f5f5;
+}
+.Toggle_Mid:hover .Slider {
+    background-color: #0a0a0a;
+}
+.Slider {
+    position: absolute;
+    transform:translate(-50%, -50%);
+    left: 25%;
+    top:50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    transition: 0.3s ease-in-out;
+}
+
+
+
+
+
+/* ---------------------
+  |     Responsive      |
+   --------------------- */  
+
+   @media screen and (max-width: 500px){
+    .Half_Width_R {
+        max-width: 95%;
+        width: 95%;
+    }
+    .Inline_R {
+        flex-direction: column;
+    }
+   }
